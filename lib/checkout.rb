@@ -13,7 +13,8 @@ class Checkout
   end
 
   def total
-    80
+    prices = basket.map { |sku| ITEMS[sku][0]}
+    prices.inject(0){|sum, x| sum + x }
   end
 
 end
