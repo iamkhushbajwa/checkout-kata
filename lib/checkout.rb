@@ -24,7 +24,7 @@ class Checkout
         items_to_qualify = details[1][0]
         price_of_offer = details[1][1]
         if item_count >= items_to_qualify
-          items_to_qualify.times{ @basket -= [sku]}
+          items_to_qualify.times{ @basket.delete_at(basket.find_index(sku))}
           price_of_offer
         end
       end

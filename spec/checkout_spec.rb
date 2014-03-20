@@ -25,4 +25,9 @@ describe Checkout do
 		checkout = Checkout.new([:a,:b,:b])
 		expect(checkout.total).to eq(95)
 	end
+
+	it "knows the total when buying A, B, B, C, A, A, B, D" do
+		checkout = Checkout.new([:a,:b,:b,:c,:a,:a,:b,:d])
+		expect(checkout.total).to eq(240)
+	end
 end
