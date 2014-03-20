@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout</title>
+</head>
+<body>
+<h1>Checkout</h1>
+<div id="total">
+	<h2>Total</h2>
+	<input value="<%= @total %>" readonly>
+</div>
+
+<div id="items">
+	<h2>Items</h2>
+	<form action="/" method="post">
+		<button name="item" value="a">A</button>
+		<button name="item" value="b">B</button>
+		<button name="item" value="c">C</button>
+		<button name="item" value="d">D</button>
+	</form>
+</div>
+<form action="/new_customer" method="get">
+	<button>New Customer</button>
+</form>
+</body>
+</html>
