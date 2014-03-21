@@ -8,7 +8,7 @@ set :session_secret, 'Guruji'
 get '/' do
   if session[:basket]
     temp_basket = session[:basket].clone
-    @total = Checkout.new(temp_basket).total
+    @total = "£#{Checkout.new(temp_basket).total}"
   end
   p session[:basket]
   erb :index
