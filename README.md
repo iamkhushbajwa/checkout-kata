@@ -32,11 +32,14 @@ To run the application run `irb`:
 require "./lib/checkout"
 => true
 checkout = Checkout.new([:a, :b, :b, :c])
-=> #<Checkout:0x007f96f11e4e68 @basket=[:a, :b, :b, :c]> 
+=> #<Checkout:0x007f96f11e4e68 @basket=[:a, :b, :b, :c]>
 checkout.total
 => 115
 ```
 
+### Issues
+* Cleanup of User Interface
+
 ### Extension
 As an extension I developed a front-end for the Ruby code
-in the background.
+in the background which can be viewed on [Heroku](http://checkout-kata.herokuapp.com/).
