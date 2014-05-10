@@ -1,4 +1,4 @@
-Checkout Kata
+Checkout Kata [![Code Climate](https://codeclimate.com/github/khushkaran/checkout-kata.png)](https://codeclimate.com/github/khushkaran/checkout-kata)
 ---
 End of week 4 challenge @makersacademy set by
 [Tony Denyer](https://github.com/antonydenyer) been set
